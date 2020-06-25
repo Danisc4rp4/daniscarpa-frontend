@@ -1,0 +1,25 @@
+.Register {
+  height: 750px;
+}
+
+.Register div {
+  border-radius: 2%;
+  border: 5px darkgray;
+  background-color: lightblue;
+  padding: 50px;
+}
+
+.FormLabel {
+  float: left;
+}
+
+.FieldInfo {
+  float: right;
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+}
+
+.FormGroup {
+  margin: 0px 0px;
+  padding: 20px !important;
+}

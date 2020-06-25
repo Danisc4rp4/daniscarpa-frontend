@@ -1,0 +1,23 @@
+.Login {
+  height: 750px;
+}
+
+.Login div {
+  border-radius: 2%;
+  border: 5px darkgray;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.FormLabel {
+  float: left;
+}
+
+.FieldInfo {
+  float: right;
+}
+
+.FormGroup {
+  margin: 0px 0;
+  padding: 20px !important;
+}
