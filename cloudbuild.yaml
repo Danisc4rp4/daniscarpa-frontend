@@ -3,3 +3,7 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['build']
+
+images:
+- 'gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA'
+- 'gcr.io/$PROJECT_ID/$REPO_NAME:latest'
