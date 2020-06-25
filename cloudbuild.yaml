@@ -4,4 +4,6 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['build']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/daniscarpa/frontend']
+  args: [ 'build', '-t', 'gcr.io/daniscarpa/frontend', '.' ]
+images:
+ - 'gcr.io/daniscarpa/frontend'
