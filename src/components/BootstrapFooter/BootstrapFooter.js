@@ -9,7 +9,7 @@ class BootstrapFooter extends React.Component{
                 <div className="row">
                     <div className="col-md-12">
                         <Navbar bg="light" variant="light" expand="lg" sticky="bottom">
-                            <Navbar.Brand href="#home">Daniscarpa</Navbar.Brand>
+                            <Navbar.Brand href="mailto:info@daniscarpa.com">Contact me</Navbar.Brand>
                         </Navbar>
                     </div>
                 </div>

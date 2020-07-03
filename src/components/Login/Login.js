@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import {connect} from 'react-redux';
+import {userPostFetch} from '../../redux/actions';
 
 import './Login.css';
 
@@ -18,8 +20,8 @@ class Login extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    event.preventDefault();
+    event.preventDefault()
+    this.props.userPostFetch(this.state)
   }
   
   render() {
@@ -52,4 +54,8 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+const mapDispatchToProps = dispatch => ({
+  userPostFetch: userInfo => dispatch(userPostFetch(userInfo))
+})
+
+export default connect(null, mapDispatchToProps)(Login);
